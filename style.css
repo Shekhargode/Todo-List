@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://res.cloudinary.com/dxpw8tf13/image/upload/v1716291510/Overhead_shot_computer_laptop_notebook_and_coffee_cup_on_wooden_desk__y5bmwb.jpg') no-repeat center center fixed; /* Add your background image URL here */
+    background-size: cover;
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.6); /* Adjusted opacity */
+    margin: 100px 100px 100px 800px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added a slight shadow for better contrast */
+}
+
+.todo-app h2 {
+    color: #002675;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    padding-left: 20px;
+}
+
+.todo-app h2 img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://www.svgrepo.com/show/440159/radio-button-unchecked.svg");
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 17px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("https://static.thenounproject.com/png/5441532-200.png");
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
