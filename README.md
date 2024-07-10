@@ -42,5 +42,7 @@ Welcome to the To-Do App! This project is a simple yet powerful tool designed to
 
 For a better experience open it in PC/Laptop.
 
+https://shekhargode.github.io/Todo-List/
+
 Enjoy using the To-Do App and happy task managing!
 
